@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<style>
+    .card {
+        background-color: rgba(104, 104, 104, 0.719);
+    }
+
+    .container {
+        background-color: rgba(0, 0, 0, 0);
+    }
+</style>
+<h1 class="text-center my-5">Data {{ data.name }}</h1>
+<div class="container py-5">
+    <div class="card p-2" style="max-width: 640px;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="http://localhost:1111/img/photo/lewi.jpg" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{ data.name }}</h5>
+                    <br>
+                    <p class="card-text"><b>Position : </b>{{data.position}}</p>
+                    <p class="card-text"><b>nationalty : </b>{{ data.nationality }}</p>
+                    <p class="card-text"><b>club : </b>{{ data.club }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

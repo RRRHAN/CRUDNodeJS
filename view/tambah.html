@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<h1 class="text-center my-5">Form tambah data</h1>
+
+<div class="container">
+    <form method="POST">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="position">Position</label>
+            <input type="text" class="form-control" id="position" name="position">
+        </div>
+        <div class="form-group">
+            <label for="nationality">Nationality</label>
+            <input type="text" class="form-control" id="nationality" name="nationality">
+        </div>
+        <div class="form-group">
+            <label for="club">Club</label>
+            <input type="text" class="form-control" id="club" name="club">
+        </div>
+        <!-- <div class="form-group">
+            <label for="playerphoto">photo</label>
+            <input type="file" class="form-control" id="playerphoto" name="photo">
+        </div> -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{% endblock %}

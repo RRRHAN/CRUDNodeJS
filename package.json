@@ -9,6 +9,12 @@
   "author": "Raihan Firmansyah",
   "license": "ISC",
   "dependencies": {
+    "file-system": "^2.2.2",
+    "formidable": "^1.2.2",
+    "mysql": "^2.18.1",
+    "node-session": "^1.2.1",
+    "node-static": "^0.7.11",
+    "querystring": "^0.2.0",
     "routes": "^2.1.0",
     "swig": "^1.4.2",
     "swig-templates": "^2.0.3"
